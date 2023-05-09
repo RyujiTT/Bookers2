@@ -22,11 +22,7 @@
         	 <% @users.each do |user| %>
       	  	<tr>
       	  	  <td>
-      	  	    <% if user.profile_image.attached? %>
-                  <%= image_tag user.profile_image(80,80) %>
-                <% else %>
-                  <%= image_tag "default-image.jpg", :size => '80x80' %>
-                <% end %>
+                <%= image_tag user.get_profile_image(80,80) %>
       	  	  </td>
       	  	  <td><%= user.name %></td>
       	  	  <td><%= link_to "Show", "/users/#{user.id}" %></td>
