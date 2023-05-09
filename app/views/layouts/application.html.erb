@@ -16,7 +16,7 @@
         <div class="container">
           <nav class="nav navbar-left">
             <li>
-              <%= link_to root_path, class:"btn btn-link nav-link text-light" do %>
+              <%= link_to root_path, class:"nav-link navbar-brand text-light" do %>
                 <span>Bookers</span>
               <% end %>
             </li>
@@ -76,5 +76,15 @@
       </nav>
     </header>
     <%= yield %>
+
+    <footer>
+      <div class='container mt-5'>
+        <div class='row'>
+          <div class='mx-auto'>
+            <p>CopyRight Infratop.inc</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
